@@ -1,0 +1,1268 @@
+*,
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* LANDING PAGE / INDEX */
+
+/* header {
+    position: sticky;
+} */
+body {
+    overflow-x: hidden;
+}
+
+.top-bar {
+    background: var(--primer, #383961);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar h2 {
+    color: #EFEFEF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    overflow: hidden;
+}
+
+.top-bar .search-bar {
+    width: 100%;
+    height: 27px;
+    border-radius: 20px;
+    border: 1px solid #EFEFEF;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .search-bar input {
+    background-color: #383961;
+    width: 97%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0px 15px;
+    color: #EFEFEF;
+    font-size: 15px;
+}
+
+.top-bar #search-bar::placeholder {
+    color: #EFEFEF;
+    font-size: 15px;
+}
+
+.top-bar .search-bar svg {
+    padding: 4px;
+    color: #EFEFEF;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 520px) {
+    .top-bar .search-bar {
+        display: none;
+    }
+}
+
+.top-bar .nav-btn {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar button {
+    height: 27px;
+    border: 1px solid #383961;
+    border-radius: 20px;
+    background: var(--sekunder, #E9EBF8);
+    color: #031927;
+    font-size: 15px;
+}
+
+.top-bar .masuk {
+    width: 95px;
+}
+
+.top-bar .buat-tulisan {
+    width: 123px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.nav-bar {
+    border-top: 1px solid #EFEFEF;
+    background: var(--primer, #383961);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #EFEFEF;
+    font-size: 15px;
+}
+
+.carousel-prev-icon svg {
+    width: 85%;
+}
+
+.carousel-next-icon svg {
+    width: 85%;
+}
+
+.carousel-caption {
+    background-color: rgba(233, 235, 248, 0.80);
+}
+
+.carousel-caption h5 {
+    color: #383961;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.carousel-caption p {
+    color: var(--primer, #383961);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.berita-populer h3 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.berita-populer-wrapper {
+    max-height: 333px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.berita-populer-wrapper::-webkit-scrollbar {
+    background-color: rgba(180, 190, 255, 0.80);
+    border-radius: 10px;
+    width: 15px;
+}
+
+.berita-populer-wrapper::-webkit-scrollbar-thumb {
+    background-color: #383961;
+    border-radius: 10px;
+}
+
+.berita-populer-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid black;
+}
+
+.berita-populer-list:last-child {
+    border: none;
+}
+
+.berita-populer-list img {
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.berita-populer-list p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 25 px;
+}
+
+.berita-terkini h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.berita-terkini .carousel .carousel-inner .bt-img {
+    border-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+    height: 245px;
+    max-width: 1471px;
+}
+
+.berita-terkini-overlay {
+    background-color: rgba(233, 235, 248, 0.3);
+    line-height: 19px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--primer, #383961);
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+
+.terpopuler .terpopuler-border {
+    border-right: 1px solid #000;
+}
+
+.terpopuler .kata-kunci-terpopuler li {
+    list-style: none;
+    border-bottom: 1px solid #000;
+}
+
+.terpopuler .tulisan-terpopuler li {
+    list-style: none;
+    border-bottom: 1px solid #000;
+}
+
+.terpopuler h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.terpopuler h6 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.terpopuler p {
+    font-size: 13px;
+}
+
+.untuk-kamu-baca h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #383961;
+}
+
+.untuk-kamu-baca .ukb-card {
+    background-color: #E9EBF8;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #383961;
+}
+
+.untuk-kamu-baca .ukb-card .card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    max-width: 400px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.footer {
+    background-color: #E9EBF8;
+    color: #383961;
+}
+
+.footer .footer-1 h1 {
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.footer .footer-1 p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer .footer-2 h6 {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+/* .footer-2,
+.footer-3 {
+    text-align: left;
+} */
+
+.footer p {
+    font-size: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #383961;
+}
+
+.footer .sosial-media-icons {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.copyright {
+    background-color: #383961;
+    color: #E9EBF8;
+    font-size: 15px;
+}
+
+/* @media screen and () {} */
+
+/* CATEGORY PAGE */
+.category-news-list {
+    display: flex;
+    background-color: #E9EBF8;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.category-news-list img {
+    max-width: 150px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.category-news-list-text {
+    padding-top: 12px;
+}
+
+/* SINGLE-NEWS PAGE */
+.single-news h4 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.single-news p {
+    font-size: 20px;
+}
+
+.single-news span {
+    font-size: 18px;
+    line-height: 1px;
+}
+
+.single-news .news-penulis {
+    display: flex;
+    gap: 10px;
+}
+
+.single-news .news-penulis img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.single-news .news-penulis .news-penulis-text p {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.single-news .news-penulis .news-penulis-text span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.single-news .right-img {
+    position: relative;
+    display: inline-block;
+}
+
+.single-news .right-img img {
+    width: 100%;
+    display: block;
+}
+
+.single-news .right-img .caption {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    background: rgba(233, 235, 248, 0.80);
+    color: #383961;
+    padding: 10px;
+    text-align: center;
+    height: 70px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.single-news .right-img .caption h6 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.single-news .right-img .caption p {
+    font-size: 16px;
+    line-height: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.single-news .right-img:hover .caption {
+    height: 110px;
+}
+
+.single-news .right-img:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* KEYWORD TERPOPULER PAGE */
+.keyword-h6 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.keyword-berita-terpopuler h5 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.keyword-berita-terpopuler .carousel .carousel-inner .bt-img {
+    border-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+    height: 245px;
+    max-width: 1471px;
+}
+
+/* LOGIN PAGE */
+.back-button {
+    position: fixed;
+}
+
+.login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login .login-text h1 {
+    color: #000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto;
+}
+
+.login .login-text h2 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.login .login-text label {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.login .login-text input {
+    border-radius: 10px;
+    border: 1px solid #000;
+    height: 40px;
+    width: 450px;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.login .login-text .password-input .pass-input input {
+    border-radius: 10px;
+    border: 1px solid #000;
+    height: 40px;
+    width: 410px;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.login .login-text .password-input .pass-input span {
+    background-color: #FFF;
+    border-color: #000;
+    border-radius: 10px;
+    border-left: none;
+}
+
+.login .login-text button {
+    color: #EFEFEF;
+    font-size: 20px;
+    font-weight: 400;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    background: #383961;
+    border: none;
+}
+
+.login .login-text .daftar {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.login .login-text .daftar a {
+    color: #383961;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+
+}
+
+.login img {
+    width: 380px;
+    height: auto;
+}
+
+/* SIGN IN PAGE */
+
+.signin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signin .signin-text h1 {
+    color: #000;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto;
+
+}
+
+.signin .signin-text h2 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.signin .signin-text label {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.signin .signin-text input {
+    border-radius: 10px;
+    border: 1px solid #000;
+    height: 40px;
+    width: 450px;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.signin .signin-text .button-daftar {
+    color: #EFEFEF;
+    font-size: 20px;
+    font-weight: 400;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    background: #383961;
+}
+
+.modal {
+    border-radius: 15px;
+}
+
+.modal-header h5 {
+    color: var(--primer, #383961);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modal-header button {
+    border: none;
+    background: none;
+}
+
+.modalFooter button {
+    color: #EFEFEF;
+    font-size: 15px;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    background: #383961;
+}
+
+.signin .signin-text .masuk {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.signin .signin-text .masuk a {
+    color: #383961;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.signin img {
+    width: 350px;
+    height: auto;
+}
+
+/* BERANDA AKUN NO TULISAN */
+.akun-header .nav-btn i {
+    color: #EFEFEF;
+    font-size: 23px;
+    width: 100px;
+    text-align: center;
+    align-self: center;
+}
+
+.akun-title {
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.profil-saya-left .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 270px;
+}
+
+.profil-saya-left img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1D1D1D;
+}
+
+.profil-saya-left-text .nama {
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.profil-saya-left-text .tulisan {
+    color: #000;
+    font-size: 23px;
+}
+
+.profil-saya-left-text .kali-dibaca {
+    color: #000;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.profil-saya-left-text .bergabung-sejak {
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.profil-saya-left-text button {
+    border-radius: 10px;
+    background: var(--primer, #383961);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+}
+
+.profil-saya .tulisan-populer {
+    border-radius: 10px;
+    background: var(--sekunder, #E9EBF8);
+    height: 270px;
+    padding: 10px;
+}
+
+.profil-saya .tulisan-populer .title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.profil-saya .tulisan-populer .penulis {
+    color: #000;
+    font-size: 18px;
+}
+
+.profil-saya .tulisan-populer .keterangan {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    vertical-align: bottom;
+    margin-top: 130px;
+}
+
+.tulisan-saya h5 {
+    color: var(--sekunder, #E9EBF8);
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #383961;
+    padding: 7px;
+}
+
+.tulisan-saya p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tulisan-saya button {
+    border-radius: 10px;
+    background: var(--sekunder, #E9EBF8);
+    color: var(--primer, #383961);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0 1px 1px;
+}
+
+.tulisan-saya .tulisan-saya-list {
+    background-color: #E9EBF8;
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+.tulisan-saya .tulisan-saya-list small {
+    font-size: 15px;
+}
+
+.tulisan-saya .tulisan-saya-list h6 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #383961;
+}
+
+.tulisan-saya .tulisan-saya-list p {
+    overflow: hidden;
+    color: var(--primer, #383961);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.tulisan-saya .tulisan-saya-list .hapus-tulisan {
+    color: var(--primer, #383961);
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #000;
+    box-shadow: none;
+    font-weight: 400;
+    width: 200px;
+}
+
+.tulisan-saya .tulisan-saya-list .baca-tulisan {
+    color: var(--sekunder, #E9EBF8);
+    font-size: 16px;
+    border-radius: 7px;
+    background: var(--primer, #383961);
+    box-shadow: none;
+    font-weight: 400;
+    width: 200px;
+}
+
+/* EDIT PROFIL */
+.edit-profil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.edit-profil h6 {
+    color: var(--primer, #383961);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.profile-img {
+    width: 230px;
+    min-height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border-radius: 300px;
+    border: 2px solid var(--primer, #383961);
+}
+
+.edit-profil .ubah-gambar-btn {
+    border-radius: 20px;
+    background: var(--sekunder, #E9EBF8);
+    flex-shrink: 0;
+    border: none;
+    color: var(--primer, #383961);
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow: 0 2px 1px #c5c2c2;
+}
+
+.edit-profil .input-nama {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primer, #383961);
+    border-radius: 13px;
+    overflow: hidden;
+    width: 550px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.edit-profil .input-nama span {
+    margin-left: 20px;
+    color: var(--primer, #383961);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.edit-profil .input-nama input {
+    border: none;
+    outline: none;
+    color: #383961;
+    margin-left: -150px;
+    margin-right: -163px;
+    width: 350px;
+}
+
+.edit-profil .input-nama a {
+    align-items: end;
+    margin-right: 10px;
+}
+
+.edit-profil .input-kata-sandi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primer, #383961);
+    border-radius: 13px;
+    overflow: hidden;
+    width: 550px;
+    height: 35px;
+}
+
+.edit-profil .input-kata-sandi span {
+    margin-left: 20px;
+    color: var(--primer, #383961);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.edit-profil .input-kata-sandi input {
+    border: none;
+    outline: none;
+    color: #383961;
+    margin-right: 52px;
+    width: 350px;
+}
+
+.edit-profil .simpan-btn {
+    width: 260px;
+    height: 35px;
+    border-radius: 10px;
+    background: var(--primer, #383961);
+    color: var(--sekunder, #E9EBF8);
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+}
+
+.edit-profil .keluar-akun-btn {
+    width: 260px;
+    height: 35px;
+    border-radius: 10px;
+    background: #FFF;
+    color: var(--primer, #383961);
+    font-size: 17px;
+    border: 1px solid #383961;
+}
+
+/* BUAT TULISAN */
+.buat-tulisan-nav {
+    background-color: #383961;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buat-tulisan-nav .edit {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.unggah-btn {
+    border-radius: 15px;
+    border: 1px solid var(--sekunder, #E9EBF8);
+    background: var(--sekunder, #E9EBF8);
+    color: var(--primer, #383961);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.buat-tulisan input,
+select,
+textarea,
+select {
+    border: 1px solid var(--primer, #383961);
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.kategori .kategori-placeholder {
+    display: none;
+}
+
+.kategori option {
+    background-color: #E9EBF8;
+    font-weight: 500;
+    color: var(--primer, #383961);
+}
+
+/* BACA TULISAN */
+.daftar-tulisan-saya h3 {
+    color: var(--primer, #383961);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.daftar-tulisan-saya h6 {
+    color: var(--primer, #383961);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.daftar-tulisan-saya .edit a {
+    border-radius: 7px;
+    border: 1px solid var(--primer, #383961);
+    background: var(--primer, #383961);
+    color: var(--sekunder, #E9EBF8);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.daftar-tulisan-saya p {
+    color: var(--primer, #383961);
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.daftar-tulisan-saya small {
+    color: var(--primer, #383961);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/* MODAL CSS */
+
+.dis-modal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button1 {
+    color: #383961;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #383961;
+    background: #E9EBF8;
+}
+
+.button2 {
+    color: #E9EBF8;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #383961;
+    background: #383961;
+}
+
+.modal {
+    border-radius: 15px;
+}
+
+.modal-bg1{
+    background-color: #E9EBF8;
+}
+
+.modal-header h5 {
+    color: var(--primer, #383961);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modal-header button {
+    border: none;
+    background: none;
+    justify-self: end;
+}
+
+.modal-body h5 {
+    color: var(--primer, #383961);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.modal-body h4 {
+    color: var(--primer, #383961);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modal-body img{
+    display: block;
+    margin: auto;
+    max-width: 280px;
+    max-height: 225px;
+}
+
+.form-group label {
+    color: var(--primer, #383961);
+    font-size: 15px;
+    font-weight: 600;
+}
+.form-group input {
+    color: var(--primer, #383961);
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #E9EBF8;
+    border-radius: 12px;
+    border-color: #383961;
+}
+
+.modal-header div .button1 {
+    color: #383961;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #383961;
+    background: #E9EBF8;
+}
+.modal-header div .button2 {
+    color: #E9EBF8;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #383961;
+    background: #383961;
+}
+
+.modalFooter{
+    border-radius: 15px;
+    padding-bottom: 30px;
+}
+.modalFooter .button1 {
+    color: #383961;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #383961;
+    background: #E9EBF8;
+}
+.modalFooter .button2 {
+    color: #E9EBF8;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    width: 170px;
+    height: 33px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #383961;
+    background: #383961;
+}
+
+@media screen and (max-width: 1024px) {
+    .top-bar .nav-btn {
+        width: 200px;
+        overflow: hidden;
+    }
+
+    .top-bar .search-bar {
+        width: 80%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar .nav-btn {
+        width: 180px;
+        overflow: hidden;
+    }
+
+    .top-bar .buat-tulisan {
+        width: 100px;
+    }
+
+    .berita-terkini .carousel .carousel-inner .bt-img {
+        height: 200px;
+    }
+    
+    .footer .footer-1 h1 {
+        font-size: 35px;
+    }
+
+    .footer .footer-1 p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .top-bar h2 {
+        font-size: 25px;
+    }
+
+    .top-bar .search-bar {
+        display: none;
+        overflow: hidden;
+    }
+
+    .top-bar .nav-btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .top-bar button {
+        width: 100px;
+        margin: 5px 0;
+        overflow: hidden;
+    }
+
+    .carousel-caption h5 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+
+    .berita-terkini .carousel .carousel-inner .bt-img {
+        height: 180px;
+    }
+
+    .profil-saya-left .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil-saya-left img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profil-saya-left-text {
+        margin-top: 20px;
+    }
+
+    .profil-saya-left-text .nama,
+    .profil-saya-left-text .tulisan,
+    .profil-saya-left-text .kali-dibaca,
+    .profil-saya-left-text .bergabung-sejak {
+        font-size: 18px;
+    }
+
+    .edit-profil .input-nama,
+    .edit-profil .input-kata-sandi {
+        width: 100%;
+    }
+
+    .edit-profil .input-nama input,
+    .edit-profil .input-kata-sandi input {
+        width: 70%;
+    }
+
+    .buat-tulisan-nav .edit {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .top-bar h2 {
+        font-size: 20px;
+    }
+
+    .berita-terkini .carousel .carousel-inner .bt-img {
+        height: 150px;
+    }
+
+    .profil-saya-left img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profil-saya-left-text .nama,
+    .profil-saya-left-text .tulisan,
+    .profil-saya-left-text .kali-dibaca,
+    .profil-saya-left-text .bergabung-sejak {
+        font-size: 16px;
+    }
+
+    .footer .footer-1 h1 {
+        font-size: 30px;
+    }
+
+    .footer .footer-1 p {
+        font-size: 16px;
+    }
+
+    .buat-tulisan-nav .edit {
+        flex-direction: column;
+    }
+}

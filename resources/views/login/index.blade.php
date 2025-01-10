@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <!--css style-->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}" />
 
     <!--cdn bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,7 +24,7 @@
 
 <body>
     @include('sweetalert::alert')
-    <a href="/"><svg class="back-button m-3" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+    <a href="/"><svg class="back-button m-3" xmlns="https://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
         fill="none">
         <path
             d="M20 36.6666C29.2048 36.6666 36.6667 29.2047 36.6667 19.9999C36.6667 10.7952 29.2048 3.33325 20 3.33325C10.7953 3.33325 3.33334 10.7952 3.33334 19.9999C3.33334 29.2047 10.7953 36.6666 20 36.6666Z"
@@ -52,7 +52,7 @@
                         <div class="input-group-append">
                             <a href="" class="btn btn-outline-secondary">
                                 <i class="bi bi-eye-slash" aria-hidden="true">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
                                         <path
                                             d="M15 11.25C14.0054 11.25 13.0516 11.6451 12.3483 12.3483C11.6451 13.0516 11.25 14.0054 11.25 15C11.25 15.9946 11.6451 16.9484 12.3483 17.6517C13.0516 18.3549 14.0054 18.75 15 18.75C15.9946 18.75 16.9484 18.3549 17.6517 17.6517C18.3549 16.9484 18.75 15.9946 18.75 15C18.75 14.0054 18.3549 13.0516 17.6517 12.3483C16.9484 11.6451 15.9946 11.25 15 11.25ZM15 21.25C13.3424 21.25 11.7527 20.5915 10.5806 19.4194C9.40848 18.2473 8.75 16.6576 8.75 15C8.75 13.3424 9.40848 11.7527 10.5806 10.5806C11.7527 9.40848 13.3424 8.75 15 8.75C16.6576 8.75 18.2473 9.40848 19.4194 10.5806C20.5915 11.7527 21.25 13.3424 21.25 15C21.25 16.6576 20.5915 18.2473 19.4194 19.4194C18.2473 20.5915 16.6576 21.25 15 21.25ZM15 5.625C8.75 5.625 3.4125 9.5125 1.25 15C3.4125 20.4875 8.75 24.375 15 24.375C21.25 24.375 26.5875 20.4875 28.75 15C26.5875 9.5125 21.25 5.625 15 5.625Z"
                                             fill="black" />
@@ -71,7 +71,7 @@
                                     <div class="modal-header">
                                         <h5>Anda Berhasil Masuk :D</h5>
                                         <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
+                                            <svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
                                                 fill="none">
                                                 <path
                                                     d="M25.0001 45.8333C36.506 45.8333 45.8334 36.5059 45.8334 25C45.8334 13.494 36.506 4.16663 25.0001 4.16663C13.4941 4.16663 4.16675 13.494 4.16675 25C4.16675 36.5059 13.4941 45.8333 25.0001 45.8333Z"
@@ -84,7 +84,7 @@
                                             </svg></button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="{{ asset('images/Success.png') }}" alt="">
+                                        <img src="{{ secure_asset('images/Success.png') }}" alt="">
                                     </div>
                                     <div class="modalFooter text-center">
                                         <button type="button" class="" data-bs-dismiss="modal">Close</button>
@@ -96,7 +96,7 @@
                     <p class="daftar mt-5">Belum punya akun? <a href="/register">Daftar</a></p>
                 </div>
             </div>
-            <img class="mt-5" src="{{ asset('images/Login.png') }}" alt="">
+            <img class="mt-5" src="{{ secure_asset('images/Login.png') }}" alt="">
         </div>
     </form>
     <!--cdn bootstrap-->

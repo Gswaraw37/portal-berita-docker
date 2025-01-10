@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profil</title>
     <!--css style-->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}" />
 
     <!--cdn bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,7 +25,7 @@
 
 <body>
     @include('sweetalert::alert')
-    <a href="/profile/{{ $users->username }}"><svg class="back-button mt-0 m-3" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+    <a href="/profile/{{ $users->username }}"><svg class="back-button mt-0 m-3" xmlns="https://www.w3.org/2000/svg" width="40" height="40"
             viewBox="0 0 40 40" fill="none">
             <path
                 d="M20 36.6666C29.2048 36.6666 36.6667 29.2047 36.6667 19.9999C36.6667 10.7952 29.2048 3.33325 20 3.33325C10.7953 3.33325 3.33334 10.7952 3.33334 19.9999C3.33334 29.2047 10.7953 36.6666 20 36.6666Z"
@@ -43,9 +43,9 @@
             @csrf
             <h6 class="mb-3">Edit Profil</h6>
             @if ($users->gambar)
-                <img src="{{ asset('storage/' . $users->gambar) }}" alt="" class="mb-2 img-fluid profile-img">
+                <img src="{{ secure_asset('storage/' . $users->gambar) }}" alt="" class="mb-2 img-fluid profile-img">
             @else
-                <img src="{{ asset('images/flynn.png') }}" alt="" class="mb-2 img-fluid profile-img">
+                <img src="{{ secure_asset('images/flynn.png') }}" alt="" class="mb-2 img-fluid profile-img">
             @endif
             <div class="judul mb-3 mx-4">
                 <input class="col-12 form-control" type="file" name="gambar" id="gambar">
@@ -54,7 +54,7 @@
                 <span>Username</span>
                 <input type="text" id="username" name="username" value="{{ $users->username }}">
                 <a href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+                    <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
                         <path
                             d="M13.75 5H5C4.33696 5 3.70107 5.26339 3.23223 5.73223C2.76339 6.20107 2.5 6.83696 2.5 7.5V25C2.5 25.663 2.76339 26.2989 3.23223 26.7678C3.70107 27.2366 4.33696 27.5 5 27.5H22.5C23.163 27.5 23.7989 27.2366 24.2678 26.7678C24.7366 26.2989 25 25.663 25 25V16.25"
                             stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -75,7 +75,7 @@
                         <div class="modal-header modal-bg1">
                             <h5></h5>
                             <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
+                                <svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
                                     fill="none">
                                     <path
                                         d="M25.0001 45.8333C36.506 45.8333 45.8334 36.5059 45.8334 25C45.8334 13.494 36.506 4.16663 25.0001 4.16663C13.4941 4.16663 4.16675 13.494 4.16675 25C4.16675 36.5059 13.4941 45.8333 25.0001 45.8333Z"

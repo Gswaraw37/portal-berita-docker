@@ -11,7 +11,7 @@
                     <div class="ukb-card">
                         <a href="/berita/{{ $berita->slug }}" style="text-decoration: none; color:black;">
                             @if ($berita->gambar)
-                                <img src="{{ asset('storage/' . $berita->gambar) }}" style="object-fit: cover; width: 100%; height: 300px; max-width: 500px;" class="d-block w-100 bt-img card-img" alt="...">
+                                <img src="{{ secure_asset('storage/' . $berita->gambar) }}" style="object-fit: cover; width: 100%; height: 300px; max-width: 500px;" class="d-block w-100 bt-img card-img" alt="...">
                             @else
                                 <img src="https://picsum.photos/seed/{{ $berita->kategori->kategori }}/1417/745" style="object-fit: cover; width: 100%; height: 300px; max-width: 500px;" class="card-img" alt="...">
                             @endif

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRINI</title>
     <!--css style-->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}" />
 
     <!--cdn bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -34,7 +34,7 @@
                 <form class="search-bar" role="search" action="/search">
                     <input class="form-control" type="text" id="search-bar" name="search" placeholder="Cari di sini" value="{{ request('search') }}" />
                     <button class="btn btn-outline-success" style="display: flex; place-items: center; background-color:#383961; border-color:#383961; overflow: hidden;" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
                                 stroke="#EFEFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -73,7 +73,7 @@
                                         <button type="button" class="button2"><a href="/login" style="text-decoration: none; color: black">Masuk Akun</a></button>
                                     </div>
                                     
-                                    <img src="{{ asset('images/not_login1.png') }}" alt="">
+                                    <img src="{{ secure_asset('images/not_login1.png') }}" alt="">
                                 </div>
                                 <div class="modalFooter text-center modal-bg1"></div>
                             </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buat Tulisan</title>
     <!--css style-->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}" />
 
     <!--cdn bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,7 +36,7 @@
     <div class="buat-tulisan">
         <div class="buat-tulisan-nav py-2 px-3 mb-4">
             <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
+                <svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
                     <path d="M31.6668 20H8.3335" stroke="#E9EBF8" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                     <path d="M20.0002 31.6666L8.3335 19.9999L20.0002 8.33325" stroke="#E9EBF8" stroke-width="2"
@@ -82,7 +82,7 @@
                         <div class="modal-header modal-bg1">
                             <h5></h5>
                             <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
+                                <svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
                                     fill="none">
                                     <path
                                         d="M25.0001 45.8333C36.506 45.8333 45.8334 36.5059 45.8334 25C45.8334 13.494 36.506 4.16663 25.0001 4.16663C13.4941 4.16663 4.16675 13.494 4.16675 25C4.16675 36.5059 13.4941 45.8333 25.0001 45.8333Z"

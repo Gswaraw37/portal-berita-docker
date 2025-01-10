@@ -22,7 +22,7 @@
                         <div class="carousel-item active">
                             <a href="/berita/{{ $beritaa->slug }}" style="text-decoration: none">
                                 @if ($beritaa->gambar)
-                                    <img src="{{ asset('storage/' . $beritaa->gambar) }}" style="object-fit: cover; width: 100%; height: 478px; max-width: 819px;" class="d-block w-100 rounded-4" alt="...">
+                                    <img src="{{ secure_asset('storage/' . $beritaa->gambar) }}" style="object-fit: cover; width: 100%; height: 478px; max-width: 819px;" class="d-block w-100 rounded-4" alt="...">
                                 @else
                                     <img src="https://picsum.photos/seed/{{ $beritaa->kategori->kategori }}/1417/745" style="object-fit: cover; width: 100%; height: 478px; max-width: 819px;" class="d-block w-100 rounded-4" alt="...">
                                 @endif
@@ -37,7 +37,7 @@
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselBP"
                         data-bs-slide="prev">
                         <span class="carousel-prev-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
+                            <svg xmlns="https://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                 fill="none">
                                 <path
                                     d="M22 42C33.046 42 42 33.046 42 22C42 10.954 33.046 2 22 2C10.954 2 2 10.954 2 22C2 33.046 10.954 42 22 42Z"
@@ -51,7 +51,7 @@
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselBP"
                         data-bs-slide="next">
                         <span class="carousel-next-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
+                            <svg xmlns="https://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                 fill="none">
                                 <path
                                     d="M22 2C10.954 2 2 10.954 2 22C2 33.046 10.954 42 22 42C33.046 42 42 33.046 42 22C42 10.954 33.046 2 22 2Z"
@@ -72,7 +72,7 @@
                             <div class="berita-populer-list">
                                 <a href="/berita/{{ $berita->slug }}" style="text-decoration: none; display:flex; color:black">
                                     @if ($berita->gambar)
-                                        <img src="{{ asset('storage/' . $berita->gambar) }}" style="object-fit: cover; width: 100%; height: 75px; max-width: 90px;" alt="...">
+                                        <img src="{{ secure_asset('storage/' . $berita->gambar) }}" style="object-fit: cover; width: 100%; height: 75px; max-width: 90px;" alt="...">
                                     @else
                                         <img src="https://picsum.photos/seed/{{ $berita->kategori->kategori }}/1417/745" style="object-fit: cover; width: 100%; height: 75px; max-width: 90px;" alt="">
                                     @endif
@@ -94,7 +94,7 @@
                 <div class="ukb-card">
                     <a href="/berita/{{ $berita->slug }}" style="text-decoration: none; color:black;">
                         @if ($berita->gambar)
-                            <img src="{{ asset('storage/' . $berita->gambar) }}" style="object-fit: cover; width: 100%; height: 300px; max-width: 470px;" class="card-img" alt="...">
+                            <img src="{{ secure_asset('storage/' . $berita->gambar) }}" style="object-fit: cover; width: 100%; height: 300px; max-width: 470px;" class="card-img" alt="...">
                         @else
                             <img src="https://picsum.photos/seed/{{ $berita->kategori->kategori }}/1417/745" style="object-fit: cover; width: 100%; height: 300px; max-width: 470px;" class="card-img" alt="...">
                         @endif
@@ -113,7 +113,7 @@
                 <div class="category-news-list">
                     <a href="/berita/{{ $berita->slug }}" style="text-decoration: none; color:black; display:flex">
                         @if ($berita->gambar)
-                            <img src="{{ asset('storage/' . $berita->gambar) }}" style="object-fit: cover; width: 100%; height: 200px; max-width: 230px;" alt="...">
+                            <img src="{{ secure_asset('storage/' . $berita->gambar) }}" style="object-fit: cover; width: 100%; height: 200px; max-width: 230px;" alt="...">
                         @else
                             <img src="https://picsum.photos/seed/{{ $berita->kategori->kategori }}/1417/745" style="object-fit: cover; width: 100%; height: 200px; max-width: 230px;" alt="">
                         @endif

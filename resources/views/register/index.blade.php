@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGN IN</title>
     <!--css style-->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}" />
 
     <!--cdn bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,7 +24,7 @@
 
 <body>
     @include('sweetalert::alert')
-    <a href="/login"><svg class="back-button m-3" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+    <a href="/login"><svg class="back-button m-3" xmlns="https://www.w3.org/2000/svg" width="40" height="40"
             viewBox="0 0 40 40" fill="none">
             <path
                 d="M20 36.6666C29.2048 36.6666 36.6667 29.2047 36.6667 19.9999C36.6667 10.7952 29.2048 3.33325 20 3.33325C10.7953 3.33325 3.33334 10.7952 3.33334 19.9999C3.33334 29.2047 10.7953 36.6666 20 36.6666Z"
@@ -38,7 +38,7 @@
     <form action="/register" method="POST">
     @csrf
         <div class="signin">
-            <img class="mt-5" src="{{ asset('images/SignIn.png') }}" alt="">
+            <img class="mt-5" src="{{ secure_asset('images/SignIn.png') }}" alt="">
             <div class="signin-text mt-5">
                 <h1 class="text-start">Selamat Datang</h1>
                 <h2 class="text-start">Silakan buat akun terlebih dahulu</h2>
@@ -67,7 +67,7 @@
                                     <div class="modal-header">
                                         <h5>Akun Berhasil Terdaftar! Silakan Masuk ke Halaman 'Masuk Akun'</h5>
                                         <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
+                                            <svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
                                                 fill="none">
                                                 <path
                                                     d="M25.0001 45.8333C36.506 45.8333 45.8334 36.5059 45.8334 25C45.8334 13.494 36.506 4.16663 25.0001 4.16663C13.4941 4.16663 4.16675 13.494 4.16675 25C4.16675 36.5059 13.4941 45.8333 25.0001 45.8333Z"
@@ -80,7 +80,7 @@
                                             </svg></button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="{{ asset('images/Success.png') }}" alt="">
+                                        <img src="{{ secure_asset('images/Success.png') }}" alt="">
                                     </div>
                                     <div class="modalFooter text-center">
                                         <button type="button" class="" data-bs-dismiss="modal">Close</button>

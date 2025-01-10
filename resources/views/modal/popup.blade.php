@@ -53,7 +53,7 @@
                             <div class="modal-header modal-bg1">
                                 <h5></h5>
                                 <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
                                         fill="none">
                                         <path
                                             d="M25.0001 45.8333C36.506 45.8333 45.8334 36.5059 45.8334 25C45.8334 13.494 36.506 4.16663 25.0001 4.16663C13.4941 4.16663 4.16675 13.494 4.16675 25C4.16675 36.5059 13.4941 45.8333 25.0001 45.8333Z"
@@ -86,7 +86,7 @@
                             <div class="modal-header modal-bg1">
                                 <h5></h5>
                                 <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
                                         fill="none">
                                         <path
                                             d="M25.0001 45.8333C36.506 45.8333 45.8334 36.5059 45.8334 25C45.8334 13.494 36.506 4.16663 25.0001 4.16663C13.4941 4.16663 4.16675 13.494 4.16675 25C4.16675 36.5059 13.4941 45.8333 25.0001 45.8333Z"
@@ -119,7 +119,7 @@
                             <div class="modal-header modal-bg1">
                                 <h5></h5>
                                 <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
+                                    <svg xmlns="https://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
                                         fill="none">
                                         <path
                                             d="M25.0001 45.8333C36.506 45.8333 45.8334 36.5059 45.8334 25C45.8334 13.494 36.506 4.16663 25.0001 4.16663C13.4941 4.16663 4.16675 13.494 4.16675 25C4.16675 36.5059 13.4941 45.8333 25.0001 45.8333Z"

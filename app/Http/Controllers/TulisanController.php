@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Models\LaporanBerita;
 use Illuminate\Support\Facades\Log;
+use Mews\Purifier\Facades\Purifier;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Redirect;
@@ -54,10 +55,17 @@ class TulisanController extends Controller
             'slug' => 'required',
             'gambar' => 'image|file|max:5120|mimes:jpeg,png,jpg,gif,webp',
             'kategori_id' => 'required|exists:kategoris,id',
-            'isi' => 'required'
+            'isi' => 'required|string'
         ]);
+        $sanitasi = Purifier::clean($request->isi);
+
+        if (empty(strip_tags($sanitasi))) {
+            return back()->withErrors(['isi' => 'Isi berita mengandung elemen tidak valid atau kosong.'])->withInput();
+        }
+
+        $validatedData['isi'] = $sanitasi;
         $validatedData['user_id'] = auth()->user()->id;
-        $validatedData['rangkuman'] = Str::limit(strip_tags($request->isi), 100);
+        $validatedData['rangkuman'] = Str::limit(strip_tags($sanitasi), 100);
 
         if($request->file('gambar')){
             if($request->oldImage){
@@ -79,10 +87,17 @@ class TulisanController extends Controller
             'slug' => 'required',
             'gambar' => 'image|file|max:5120|mimes:jpeg,png,jpg,gif,webp',
             'kategori_id' => 'required|exists:kategoris,id',
-            'isi' => 'required'
+            'isi' => 'required|string'
         ]);
+        $sanitasi = Purifier::clean($request->isi);
+
+        if (empty(strip_tags($sanitasi))) {
+            return back()->withErrors(['isi' => 'Isi berita mengandung elemen tidak valid atau kosong.'])->withInput();
+        }
+
+        $validatedData['isi'] = $sanitasi;
         $validatedData['user_id'] = auth()->user()->id;
-        $validatedData['rangkuman'] = Str::limit(str_replace('&nbsp;', ' ', strip_tags($request->isi)), 100);
+        $validatedData['rangkuman'] = Str::limit(str_replace('&nbsp;', ' ', strip_tags($sanitasi)), 100);
             
         if($request->file('gambar')){
             $validatedData['gambar'] = $request->file('gambar')->store('gambar-berita');
